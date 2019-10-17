@@ -1,0 +1,8 @@
+<h1>Instructor:</h1>
+<h4>Name: <%= @instructor.name %> </h4>
+
+<%= button_to "Edit Instructor", edit_instructor_path(@instructor), method: :get %>
+
+<%= form_for @instructor, method: :delete do |f| %>
+    <%= f.submit "Delete Instructor" %>
+<% end %>
